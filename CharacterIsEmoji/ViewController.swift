@@ -83,11 +83,11 @@ class ViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        let isText1Truncated = text1.isSingleEmoji
-        let isText2Truncated = text2.isSingleEmoji
+        let isText1IsEmoji = text1.isSingleEmoji
+        let isText2IsEmoji = text2.isSingleEmoji
         
-        boolLabel1.text = String(isText1Truncated)
-        boolLabel2.text = String(isText2Truncated)
+        boolLabel1.text = String(isText1IsEmoji)
+        boolLabel2.text = String(isText2IsEmoji)
     }
 }
 
